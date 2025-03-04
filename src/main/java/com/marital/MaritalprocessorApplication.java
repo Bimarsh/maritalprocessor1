@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.marital.domain.MaritalPersonel;
 import com.marital.services.MaritalServices;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 @SpringBootApplication
+@EnableElasticsearchRepositories
 public class MaritalprocessorApplication implements CommandLineRunner {
 
 	@Autowired
